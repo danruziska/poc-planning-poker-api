@@ -1,6 +1,6 @@
 var http = require('http');
 var io = require('socket.io');
-var port = 3001;
+var port = process.env.PORT || 5000;
 
 var server = http.createServer(function(req, res){
     res.writeHead(200, {'Content-Type':'text/html'});
@@ -8,7 +8,7 @@ var server = http.createServer(function(req, res){
 });
 
 server.listen(port, function(){
-    console.log('server up at port ' + port);
+    console.log('server up at port ' + process.env.PORT || 5000);
 });
 
 var realtimeListener = io.listen(server);
