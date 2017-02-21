@@ -1,0 +1,24 @@
+{
+  "name": "poc-planning-poker-api",
+  "version": "1.0.0",
+  "description": "API",
+  "engines": {
+    "node": "6.9.4"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "socket.io": "^1.7.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danruziska/poc-planning-poker-api"
+  },
+  "keywords": [
+    "node",
+    "express"
+  ],
+  "license": "MIT"
+}
